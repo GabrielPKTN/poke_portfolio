@@ -1,5 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: "Righteous", sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    height:15%;
+    background-color: green;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo_pokemon {
+    width: 261px;
+    height: 96px;
+}
+
+.secao_cabecalho {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 32px;
+}
+
+.estilo_opcao {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.pokebola {
+    width: 28px;
+    height: 28px;
+}
+
+main {
+    height: 70%;
+    background-color: tomato;
+}
+
+footer {
+    height: 15%;
+    background-color: blue;
 }
