@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+    --primary-color: #2FD6A4;
+    --secundary-color: #FFF;
+    --tertiary-color: #162425;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Righteous", sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+body video {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.fundo_about {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
+header {
+    height:15%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo_pokemon {
+    width: 261px;
+    height: 96px;
+}
+
+.secao_cabecalho {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 3.2rem;
+}
+
+.estilo_opcao {
+    text-decoration: none;
+    color:  var(--secundary-color);
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+.pokebola {
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+main {
+    height: 70%;
+    
+}
+
+.container_apresentacao {
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.apresentacao {
+    gap: 20px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introducao {
+    color: var(--primary-color);
+    width: 58.2rem;
+    height: auto;
+    font-weight: 600;
+    font-size: 4.8rem;
+    -webkit-text-stroke-color: var(--tertiary-color);
+    -webkit-text-stroke-width: 1px;
+}
+
+.apresentacao p{
+    color: var(--secundary-color);
+    font-size: 3.2rem;
+    font-weight: 400;
+    width: 58.2rem;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 56.6rem;
+    gap: 20px;
+}
+
+footer {
+    height: 15%;
+    background-color: #0008;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
