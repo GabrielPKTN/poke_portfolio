@@ -18,9 +18,21 @@ body {
     height: 100vh;
 }
 
+body video {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -1;
+    object-fit: cover;
+}
+
 header {
     height:15%;
-    background-color: green;
     padding: 2rem;
     display: flex;
     flex-direction: row;
@@ -41,6 +53,8 @@ header {
 }
 
 .estilo_opcao {
+    text-decoration: none;
+    color:  var(--secundary-color);
     display: flex;
     align-items: center;
     gap: 11px;
@@ -53,7 +67,7 @@ header {
 
 main {
     height: 70%;
-    background-color: tomato;
+    
 }
 
 .container_apresentacao {
@@ -100,17 +114,35 @@ main {
     background-color: var(--primary-color);
     border: 3px solid;
     border-radius: 15px;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     font-family: "Righteous", sans-serif;
     font-weight: 600;
     font-size: 3.2rem;
     justify-content: center;
+    text-decoration: none;
     width: 267px;
     height: 73px;
+    transition: transform 0.5s ease;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+
 }
 
 footer {
     height: 15%;
-    background-color: blue;
+    background-color: #0008;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
 }
