@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 :root {
-    --primary-color: #2FD6A4;
+    --primary-color: #4BD62F;
     --secundary-color: #FFF;
-    --tertiary-color: #162425;
+    --tertiary-color: #000;
 }
 
 * {
@@ -30,6 +30,7 @@ body video {
     margin: auto;
     z-index: -1;
     object-fit: cover;
+    filter: brightness(75%);
 }
 
 .fundo_about {
@@ -93,7 +94,8 @@ main {
 
 .apresentacao {
     gap: 20px;
-    width: 65%;
+    width: 60%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -106,7 +108,7 @@ main {
     font-weight: 600;
     font-size: 4.8rem;
     -webkit-text-stroke-color: var(--tertiary-color);
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.px;
 }
 
 .apresentacao p{
