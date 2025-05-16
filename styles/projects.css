@@ -47,6 +47,7 @@ body {
 }
 
 header {
+    gap: 20px;
     height:15%;
     padding: 2rem;
     display: flex;
@@ -61,6 +62,7 @@ header {
 }
 
 .secao_cabecalho {
+    gap: 30px;
     width: 30%;
     display: flex;
     justify-content: space-evenly;
@@ -171,4 +173,70 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
+}
+
+@media (max-width: 1026px){
+
+    .logo_pokemon {
+        width: 200px;
+        height: 75px;
+    }
+
+    .container_apresentacao {
+        flex-direction: column-reverse;
+    }
+    
+    .introducao {
+        font-size: 4rem;
+        height: 150px;
+    }
+
+    .apresentacao {
+        gap: 15px;
+    }
+
+    .apresentacao p{
+        font-size: 2rem
+    }
+
+    .foto_portfolio {
+        max-width: 25%;
+        max-height: 25%;
+    }
+
+    .icons {
+        width: 4rem;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+    
+    .secao_cabecalho {
+        font-size: 1.6rem;
+    }
+
+    .logo_pokemon {
+        width: 120px;
+        height: 45px;
+    }
+
+    .pokebola {
+        width: 13px;
+        height: 13px;
+    }
+
+    .escolha_text {
+        font-size: 1.3rem;
+        width: auto;
+    }
+
+    .iniciais {
+        width: 250px;
+        height: 64px;
+    }
+
+
+   
 }
